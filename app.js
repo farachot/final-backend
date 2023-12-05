@@ -3,9 +3,9 @@ const cors = require("cors");
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2000;
 
-const db = require("./config/db");
+const db = require("./Config/db");
 const allRoutes = require("./Routers");
 
 db.then(() => {
